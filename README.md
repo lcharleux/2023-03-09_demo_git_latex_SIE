@@ -1,16 +1,70 @@
-Le but de ce document est de créer un document $\LaTeX$ tous ensemble.
-La première étape est de cloner ce dépot sur votre machine.
-Ouvrez un dossier où vous souhaitez avoir le dépôt et tapez:
+This a test !
 
-``` 
-git clone https://github.com/lcharleux/2023-03-09_demo_git_latex_SIE.git
-``` 
+kjijji
 
-Ensuite, vous pouvez modifier un document existant ou en créer un et observer que l'outil de versionnage de GIT dans VSCode a vu ces modifications.
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[math]{blindtext}
+\usepackage{graphicx}
+%package of lipsum pour un texte peu meubler %lipsum
+\title{Shared Document\LaTeX}
+\author{Noura}
+\begin{document}
+\maketitle
 
-![](figures/vscode_version.png)
+This is a shared document on Git
 
-Vous pouvez alors ajouter un message, indiquer à VScode que vous voulez ajouter les modifications à votre commit avec le (+), on dit qu'elles sont *staged*.
+\tableofcontents
+
+\section{Introduction}
+\begin{itemize}
+\item\textbf{Highlights}
+\end{itemize}
 
 
-![](figures/vscode_commit.png)
+\begin{enumerate}
+\item First Highlight
+\item Second Highlight 
+\end{enumerate}
+
+\begin{itemize}
+\item\textbf{Contributions}
+\end{itemize}
+
+\begin{enumerate}
+\item First Contribution
+\item Second Contibution
+\end{enumerate}
+
+
+\section{Methods}
+\subsection{Mathematical Method}
+\label{subsec:MM}
+
+\subparagraph{Equations:}
+$
+\beta = 77$ is a simple equation
+
+\ As mentioned in \ref {subsec:MM}
+
+\subsection{Statistical Method}
+Statistical Table 
+\begin{table}
+\begin{tabular}{l|c|r}
+
+\textbf{Mean}&\textbf{STD}&\textbf{Variance}\\
+
+0.1&0.5&0.43\\
+0.44&0.95&0.27
+
+\end{tabular}
+\caption{Statistical Variations}
+
+
+
+
+\end{document}
+
